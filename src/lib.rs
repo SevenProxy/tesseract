@@ -2,7 +2,7 @@ use yew::prelude::*;
 mod components;
 
 use components::navbar::{NavbarRoot, NavbarBox, NavbarContext};
-use components::ui::{}
+use components::hero::{HeroRoot, HeroContext, HeroBox};
 
 #[function_component(App)]
 fn app() -> Html {
@@ -15,6 +15,11 @@ fn app() -> Html {
                     </NavbarBox>
                 </NavbarRoot>
             </div>
+            <HeroRoot>
+                {"<!--<div> <Spotlight /></div>->"}
+                <HeroContext/>
+                <HeroBox />
+            </HeroRoot>
         </main>
     }
 }
