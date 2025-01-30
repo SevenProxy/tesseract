@@ -1,13 +1,13 @@
 use yew::prelude::*;
 
-pub struct Text_generate_effect;
+pub struct TextGenerateEffect;
 
-impl Component for Text_generate_effect {
+impl Component for TextGenerateEffect {
   type Message = ();
   type Properties = ();
 
   fn create(_: Context<Self>) -> Self {
-    Text_generate_effect
+    TextGenerateEffect
   }
 
   fn view(&self, _: Context<Self>) -> Html {
