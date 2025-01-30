@@ -6,11 +6,11 @@ impl Component for MagicButton {
   type Message = ();
   type Properties = ();
 
-  fn create(_: Context<Self>) -> Self {
+  fn create(_: &Context<Self>) -> Self {
     MagicButton
   }
 
-  fn view(&self, _: Context<Self>) -> Html {
+  fn view(&self, _: &Context<Self>) -> Html {
     html! {
       <button
       className="relative inline-flex h-12 w-full overflow-hidden rounded-lg 
