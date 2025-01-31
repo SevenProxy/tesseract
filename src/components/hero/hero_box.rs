@@ -16,14 +16,13 @@ impl Component for HeroBox {
       <div class="flex justify-center relative my-20 z-10">
         <div class="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 class="uppercase tracking-widest text-xs text-center text-blue-200 max-w-80">
-            {"Projeto Dinâmico, Criado com a Magia do Next.js, Aceternity e Shadcn
-            UI"}
+            {"Projeto Dinâmico, Criado com a Magia do yew, Rust, Tailwindcss e WebAssembly"}
           </h2>
 
           <TextGenerateEffect />
 
           <p class="text-center tracking-widest md:tracking-wider mb-4 text-lg md:text-lg lg:text-lg text-white">
-            {"Futuro Desenvolvedor Full Stack"}
+            {"Futuro Engenheiro de Software"}
           </p>
 
           <a

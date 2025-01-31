@@ -13,7 +13,7 @@ impl Component for HeroContext {
   fn view(&self, _: &Context<Self>) -> Html {
     html! {
       <div class="h-screen w-full bg-black-100 dark:bg-grid-white/[0.06] bg-grid-white/[0.06] flex items-center justify-center absolute top-0 left-0">
-        <div
+        <div style="mask-image: radial-gradient(ellipse at center, transparent 20%, #000);"
           class="absolute pointer-events-none inset-0 flex items-center justify-center
          bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />

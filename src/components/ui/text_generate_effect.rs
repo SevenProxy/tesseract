@@ -12,17 +12,24 @@ impl Component for TextGenerateEffect {
 
   fn view(&self, _: &Context<Self>) -> Html {
     html! {
-    <div class="text-center text-[40px] md:text-5x6 lg:text-6xl"> 
-      <div class="font-bold">
+      <div class="font-bold text-center text-[40px] md:text-5x6 lg:text-6xl">
         <div class="my-5">
           <div class="text-white sleading-snug tracking-wide">
-            <span class="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">
-              {"Transformando a Experiência do Usuário com Conceitos Modernos"}
-            </span>
+            <div>
+              <span class="text-white opacity-0" style="opacity: 1;">{"Transformando "}</span>
+              <span class="text-white opacity-0" style="opacity: 1;">{"a "}</span>
+              <span class="text-white opacity-0" style="opacity: 1;">{"Experiência" }</span>
+              <span class="text-white opacity-0" style="opacity: 1;">{"do "}</span>
+              <span class="text-white opacity-0" style="opacity: 1;">{"Usuário "}</span>
+              <span class="text-white opacity-0" style="opacity: 1;">{"com "}</span>
+              <span class="text-white opacity-0" style="opacity: 1;">{"Conceitos " }</span>
+              <span class="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">
+                {"Modernos"}
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     }
   }
 }

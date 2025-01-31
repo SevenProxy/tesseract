@@ -7,19 +7,21 @@ use components::hero::{HeroRoot, HeroContext, HeroBox};
 #[function_component(App)]
 fn app() -> Html {
     html! {
-        <main class="w-full py-6 fixed top-4 left-0">
-            <div class="w-full flex items-center justify-center">
-                <NavbarRoot>
-                    <NavbarBox>
-                        <NavbarContext />
-                    </NavbarBox>
-                </NavbarRoot>
+        <main class="relative bg-black-100 flex justify-center items-center 
+    flex-col overflow-hidden mx-auto sm:px-10 px-5">
+            <div class="max-w-7xl w-full">
+                <div class="w-full flex items-center justify-center">
+                    <NavbarRoot>
+                        <NavbarBox>
+                            <NavbarContext />
+                        </NavbarBox>
+                    </NavbarRoot>
+                </div>
+                <HeroRoot>
+                    <HeroContext/>
+                    <HeroBox />
+                </HeroRoot>
             </div>
-            <HeroRoot>
-                {"<!--<div> <Spotlight /></div>->"}
-                <HeroContext/>
-                <HeroBox />
-            </HeroRoot>
         </main>
     }
 }
