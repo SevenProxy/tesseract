@@ -3,7 +3,7 @@ mod components;
 
 use components::navbar::{NavbarRoot, NavbarBox, NavbarContext};
 use components::hero::{HeroRoot, HeroContext, HeroBox};
-use components::grid::GridRoot;
+use components::grid::{GridRoot, GridBoxAbout, GridBoxHour, GridBoxLang};
 
 #[function_component(App)]
 fn app() -> Html {
@@ -22,7 +22,11 @@ fn app() -> Html {
                     <HeroContext/>
                     <HeroBox />
                 </HeroRoot>
-                <GridRoot />
+                <GridRoot>
+                    <GridBoxAbout />
+                    <GridBoxHour />
+                    <GridBoxLang />
+                </GridRoot>
             </div>
         </main>
     }

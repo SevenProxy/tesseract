@@ -1,16 +1,22 @@
 use yew::prelude::*;
 
+#[derive(Properties, PartialEq)]
+pub struct PropsMagicButton {
+  #[prop_or_default]
+  pub children: Children,
+}
+
 pub struct MagicButton;
 
 impl Component for MagicButton {
   type Message = ();
-  type Properties = ();
+  type Properties = PropsMagicButton;
 
   fn create(_: &Context<Self>) -> Self {
     MagicButton
   }
 
-  fn view(&self, _: &Context<Self>) -> Html {
+  fn view(&self, ctx: &Context<Self>) -> Html {
     html! {
       <button
         class="relative inline-flex h-12 w-full overflow-hidden rounded-lg 
@@ -24,7 +30,7 @@ impl Component for MagicButton {
           class="inline-flex h-full w-full cursor-pointer items-center justify-center 
         rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 ${otherClasses}"
         >
-          {"Download CV"}
+          { for ctx.props().children.iter()}
         </span>
       </button>
     }

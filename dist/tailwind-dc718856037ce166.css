@@ -457,6 +457,21 @@ video {
   --radius: 0.5rem;
 }
 
+* {
+  scroll-behavior: smooth !important;
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+button:active {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -774,6 +789,10 @@ video {
   max-width: 89vw;
 }
 
+.max-w-\[8rem\] {
+  max-width: 8rem;
+}
+
 .max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -1017,10 +1036,6 @@ video {
 
 .bg-\[conic-gradient\(from_90deg_at_50\%_50\%\2c \#E2CBFF_0\%\2c \#393BB2_50\%\2c \#E2CBFF_100\%\)\] {
   background-image: conic-gradient(from 90deg at 50% 50%,#E2CBFF 0%,#393BB2 50%,#E2CBFF 100%);
-}
-
-.bg-\[linear-gradient\(40deg\2c var\(--gradient-background-start\)\2c var\(--gradient-background-end\)\)\] {
-  background-image: linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end));
 }
 
 .bg-gradient-to-b {
@@ -1366,9 +1381,19 @@ video {
   }
 }
 
-@media (min-width: 640px) {
+@media not all and (min-width: 480px) {
+  .max-sm\:max-w-\[8rem\] {
+    max-width: 8rem;
+  }
+}
+
+@media (min-width: 480px) {
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:max-w-\[8rem\] {
+    max-width: 8rem;
   }
 
   .sm\:px-10 {
@@ -1434,6 +1459,10 @@ video {
     max-width: 42rem;
   }
 
+  .md\:max-w-\[8rem\] {
+    max-width: 8rem;
+  }
+
   .md\:max-w-full {
     max-width: 100%;
   }
@@ -1475,7 +1504,7 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 976px) {
   .lg\:-right-2 {
     right: -0.5rem;
   }
