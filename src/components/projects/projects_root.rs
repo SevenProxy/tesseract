@@ -20,7 +20,7 @@ impl Component for ProjectsRoot {
     html! {
       <div class="pt-40 pb-40" id="projects">
         <h1 class="heading">
-          <span class="text-white">{"Galeria dos"}</span>
+          <span class="text-white">{"Galeria dos "}</span>
           <span class="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">{"Projetos Recentes"}</span>
         </h1>
         { for ctx.props().children.iter() }
