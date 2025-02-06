@@ -2,9 +2,9 @@ use yew::prelude::*;
 
 #[derive(Properties, PartialEq)]
 pub struct PropsProjectsCard {
-  pub banner: String,
   pub title: String,
   pub description: String,
+  pub banner: String,
   pub url: String,
   pub icon_tech: Vec<String>,
 }

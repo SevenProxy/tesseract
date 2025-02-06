@@ -1,8 +1,5 @@
-use serde::Deserialize;
-use gloo_net::http::Request;
+use once_cell::sync::Lazy;
 
-
-#[derive(Clone, PartialEq, Deserialize, Debug)]
 pub struct Project {
   pub title: String,
   pub description: String,
@@ -11,16 +8,15 @@ pub struct Project {
   pub icon_tech: Vec<String>,
 }
 
-pub async fn fetch_projects() -> Result<Vec<Project>, String> {
-  match Request::get("projects.json").send().await {
-    Ok(response) =>
-      match response.json::<Vec<Project>>().await {
-        Ok(projects) =>
-          Ok(projects),
-        Err(err) =>
-          Err(format!("Erro ao desserializar JSON: {:?}", err)),
-      },
-    Err(err) =>
-      Err(format!("Erro ao buscar JSON: {:?}", err)),
+
+pub static FETCH_PROJECTS: Lazy<Vec<Project>> = Lazy::new(|| vec![
+  Project {
+    title: String::from("asfasf"),
+    description: String::from("asfasf"),
+    banner: String::from("https://minimalist-portfolio-joao-batista-snowy.vercel.app/web-portifolio.png"),
+    url: String::from("https://minimalist-portfolio-joao-batista-snowy.vercel.app/web-portifolio.png"),
+    icon_tech: vec![
+      String::from("https://minimalist-portfolio-joao-batista-snowy.vercel.app/html.svg"),
+    ],
   }
-}
+]);

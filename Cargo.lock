@@ -733,6 +733,7 @@ name = "tesseract"
 version = "0.1.0"
 dependencies = [
  "gloo-net 0.6.0",
+ "once_cell",
  "serde",
  "serde_json",
  "wasm-bindgen",
