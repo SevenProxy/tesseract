@@ -1,5 +1,6 @@
 use yew::prelude::*;
 mod components;
+mod utils;
 
 use components::navbar::{NavbarRoot, NavbarBox, NavbarContext};
 use components::hero::{HeroRoot, HeroContext, HeroBox};
