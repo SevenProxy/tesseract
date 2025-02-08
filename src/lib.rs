@@ -1,4 +1,3 @@
-use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 mod components;
 mod utils;
@@ -7,6 +6,7 @@ use components::navbar::{NavbarRoot, NavbarBox, NavbarContext};
 use components::hero::{HeroRoot, HeroContext, HeroBox};
 use components::grid::{GridRoot, GridBoxAbout, GridBoxHour, GridBoxLang, GridBoxDevWeb, GridBoxCourse, GridBoxEmail};
 use components::projects::{ProjectsCard, ProjectsContainer, ProjectsRoot};
+use components::know_ledge::KnowRoot; 
 use utils::FETCH_PROJECTS;
 
 #[function_component(App)]
@@ -42,6 +42,7 @@ fn app() -> Html {
                         }) }
                     </ProjectsContainer>
                 </ProjectsRoot>
+                <KnowRoot />
             </div>
         </main>
     }
