@@ -6,7 +6,7 @@ use components::navbar::{NavbarRoot, NavbarBox, NavbarContext};
 use components::hero::{HeroRoot, HeroContext, HeroBox};
 use components::grid::{GridRoot, GridBoxAbout, GridBoxHour, GridBoxLang, GridBoxDevWeb, GridBoxCourse, GridBoxEmail};
 use components::projects::{ProjectsCard, ProjectsContainer, ProjectsRoot};
-use components::know_ledge::KnowRoot; 
+use components::know_ledge::{KnowRoot, KnowContainer, KnowBoxCourse, KnowBoxTech, KnowCard};
 use utils::FETCH_PROJECTS;
 
 #[function_component(App)]
@@ -42,7 +42,14 @@ fn app() -> Html {
                         }) }
                     </ProjectsContainer>
                 </ProjectsRoot>
-                <KnowRoot />
+                <KnowRoot>
+                    <KnowContainer>
+                        <KnowBoxCourse>
+                            <KnowCard />
+                        </KnowBoxCourse>
+                        <KnowBoxTech />
+                    </KnowContainer>
+                </KnowRoot>
             </div>
         </main>
     }
