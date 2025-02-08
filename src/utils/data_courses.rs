@@ -4,7 +4,7 @@ pub struct Courses {
   pub title: String,
   pub name: String,
   pub description: String,
-
+  pub icon: String,
 }
 
 
@@ -13,5 +13,6 @@ pub static FETCH_COURSES: Lazy<Vec<Courses>> = Lazy::new(|| vec![
     title: String::from("Unicessumar"),
     name: String::from("Analise e Desenvolvimento de Sistemas"),
     description: String::from("Faculdade em ADS na Instituição a Distância na Unicessumar."),
+    icon: String::from("https://venhaparaunicesumar.com.br/favicon.ico"),
   }
 ]);

@@ -7,7 +7,7 @@ use components::hero::{HeroRoot, HeroContext, HeroBox};
 use components::grid::{GridRoot, GridBoxAbout, GridBoxHour, GridBoxLang, GridBoxDevWeb, GridBoxCourse, GridBoxEmail};
 use components::projects::{ProjectsCard, ProjectsContainer, ProjectsRoot};
 use components::know_ledge::{KnowRoot, KnowContainer, KnowBoxCourse, KnowBoxTech, KnowCard};
-use utils::FETCH_PROJECTS;
+use utils::{FETCH_COURSES, FETCH_PROJECTS};
 
 #[function_component(App)]
 fn app() -> Html {
@@ -45,7 +45,9 @@ fn app() -> Html {
                 <KnowRoot>
                     <KnowContainer>
                         <KnowBoxCourse>
-                            <KnowCard />
+                            { for FETCH_COURSES.iter().map(|c| html! {
+                                <KnowCard title={c.title.clone()} name={c.name.clone()} description={c.description.clone()} icon={c.icon.clone()} />
+                            }) }
                         </KnowBoxCourse>
                         <KnowBoxTech />
                     </KnowContainer>
