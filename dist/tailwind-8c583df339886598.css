@@ -697,6 +697,10 @@ button:active {
   top: 2.5rem;
 }
 
+.top-20 {
+  top: 5rem;
+}
+
 .top-36 {
   top: 9rem;
 }
@@ -735,6 +739,10 @@ button:active {
 
 .row-span-1 {
   grid-row: span 1 / span 1;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -850,8 +858,16 @@ button:active {
   height: 3rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-20 {
   height: 5rem;
+}
+
+.h-32 {
+  height: 8rem;
 }
 
 .h-40 {
@@ -876,6 +892,10 @@ button:active {
 
 .h-\[11\.25rem\] {
   height: 11.25rem;
+}
+
+.h-\[15rem\] {
+  height: 15rem;
 }
 
 .h-\[2px\] {
@@ -916,6 +936,18 @@ button:active {
 
 .h-screen {
   height: 100vh;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-20 {
@@ -1011,6 +1043,10 @@ button:active {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .flex-none {
@@ -1116,6 +1152,20 @@ button:active {
 
 .animate-fourth {
   animation: moveHorizontal 40s ease infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-200px);
+  }
+
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.animate-move {
+  animation: move 5s linear infinite;
 }
 
 @keyframes scroll {
@@ -1263,6 +1313,15 @@ button:active {
        column-gap: 6rem;
 }
 
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
 .gap-y-8 {
   row-gap: 2rem;
 }
@@ -1319,6 +1378,10 @@ button:active {
   border-radius: calc(var(--radius) - 2px);
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1349,6 +1412,10 @@ button:active {
 .bg-\[\#13162d\] {
   --tw-bg-opacity: 1;
   background-color: rgb(19 22 45 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgba\(40\2c 40\2c 40\2c 0\.70\)\] {
+  background-color: rgba(40,40,40,0.70);
 }
 
 .bg-black {
@@ -1415,6 +1482,11 @@ button:active {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.via-cyan-500 {
+  --tw-gradient-to: rgb(6 182 212 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #06b6d4 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
 .via-emerald-400\/90 {
   --tw-gradient-to: rgb(52 211 153 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(52 211 153 / 0.9) var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -1430,6 +1502,10 @@ button:active {
 
 .to-purple {
   --tw-gradient-to: #CBACF9 var(--tw-gradient-to-position);
+}
+
+.to-transparent {
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
 .to-white {
@@ -1461,6 +1537,10 @@ button:active {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .p-\[1px\] {
@@ -1588,6 +1668,10 @@ button:active {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -1795,6 +1879,11 @@ button:active {
           mask-image: linear-gradient(to right,transparent,white 20%,white 80%,transparent);
 }
 
+.\[mask-image\:radial-gradient\(50\%_50\%_at_50\%_50\%\2c white_0\%\2c transparent_100\%\)\] {
+  -webkit-mask-image: radial-gradient(50% 50% at 50% 50%,white 0%,transparent 100%);
+          mask-image: radial-gradient(50% 50% at 50% 50%,white 0%,transparent 100%);
+}
+
 .\[mask-image\:radial-gradient\(ellipse_at_center\2c transparent_20\%\2c black\)\] {
   -webkit-mask-image: radial-gradient(ellipse at center,transparent 20%,black);
           mask-image: radial-gradient(ellipse at center,transparent 20%,black);
@@ -1900,6 +1989,10 @@ button:active {
 }
 
 @media not all and (min-width: 480px) {
+  .max-sm\:w-4 {
+    width: 1rem;
+  }
+
   .max-sm\:max-w-\[8rem\] {
     max-width: 8rem;
   }
@@ -1908,6 +2001,10 @@ button:active {
 @media (min-width: 480px) {
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:h-4 {
+    height: 1rem;
   }
 
   .sm\:h-\[40vh\] {
@@ -1924,6 +2021,10 @@ button:active {
 
   .sm\:max-w-\[8rem\] {
     max-width: 8rem;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:px-10 {
@@ -1969,6 +2070,26 @@ button:active {
     margin-top: 2.5rem;
   }
 
+  .md\:h-10 {
+    height: 2.5rem;
+  }
+
+  .md\:h-24 {
+    height: 6rem;
+  }
+
+  .md\:h-4 {
+    height: 1rem;
+  }
+
+  .md\:h-7 {
+    height: 1.75rem;
+  }
+
+  .md\:h-\[20rem\] {
+    height: 20rem;
+  }
+
   .md\:h-\[30rem\] {
     height: 30rem;
   }
@@ -1989,8 +2110,16 @@ button:active {
     width: 6rem;
   }
 
+  .md\:w-4 {
+    width: 1rem;
+  }
+
   .md\:w-60 {
     width: 15rem;
+  }
+
+  .md\:w-7 {
+    width: 1.75rem;
   }
 
   .md\:w-96 {
@@ -2017,6 +2146,10 @@ button:active {
     max-width: 100%;
   }
 
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -2040,6 +2173,11 @@ button:active {
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-4xl {
@@ -2088,6 +2226,18 @@ button:active {
     height: 2.5rem;
   }
 
+  .lg\:h-4 {
+    height: 1rem;
+  }
+
+  .lg\:h-5 {
+    height: 1.25rem;
+  }
+
+  .lg\:h-8 {
+    height: 2rem;
+  }
+
   .lg\:h-\[32vh\] {
     height: 32vh;
   }
@@ -2104,6 +2254,18 @@ button:active {
     width: 2.5rem;
   }
 
+  .lg\:w-4 {
+    width: 1rem;
+  }
+
+  .lg\:w-5 {
+    width: 1.25rem;
+  }
+
+  .lg\:w-8 {
+    width: 2rem;
+  }
+
   .lg\:w-\[84\%\] {
     width: 84%;
   }
@@ -2115,6 +2277,10 @@ button:active {
 
   .lg\:max-w-\[60vw\] {
     max-width: 60vw;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-5 {
@@ -2179,6 +2345,11 @@ button:active {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .lg\:text-xl {
