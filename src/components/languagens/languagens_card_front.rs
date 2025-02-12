@@ -17,11 +17,12 @@ impl Component for LanguagensCardFront {
           <div class="p-8 overflow-hidden h-full relative flex items-center justify-center">
             <div class="flex flex-row flex-shrink-0 justify-center items-center gap-2">
             <div class="md:h-24 md:w-24 lg:h-10 lg:w-10 rounded-full flex items-center justify-center h-8 w-8 circle-1" style="background: rgb(2, 0, 36); transform: translateY(0px);">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630" class="lg:h-4 lg:w-4 md:h-4 md:w-4 sm:h-4 max-sm:w-4">
-                <rect width="630" height="630" fill="#f7df1e"></rect>
-                <path d="M421.36 492.9c8.523 13.944 19.478 24.093 38.955 24.093 16.365 0 26.763-8.174 26.763-19.478 0-13.549-10.803-18.36-29.015-26.337l-9.948-4.272c-28.738-12.27-47.813-27.663-47.813-60.288 0-29.96 22.815-52.78 58.508-52.78 25.4 0 43.593 8.89 56.591 31.946l-30.975 19.967c-6.81-12.27-14.137-17.094-25.617-17.094-11.674 0-19.074 7.4-19.074 17.094 0 12.024 7.4 16.835 24.462 24.093l9.948 4.273c33.856 14.423 52.935 29.547 52.935 62.904 0 35.993-28.285 55.378-66.306 55.378-37.185 0-61.174-17.663-72.68-40.735zm-138.249 3.14c6.81 12.27 13.066 22.546 28.74 22.546 14.66 0 23.926-5.73 23.926-28.1V317.8h45.998v173.02c0 47.558-27.663 69.184-68.023 69.184-36.506 0-57.447-18.36-68.024-40.725z" fill="#000"></path>
+              <svg xmlns="http://www.w3.org/2000/svg" class="lg:h-4 lg:w-4 md:h-4 md:w-4 sm:h-4 max-sm:w-4" viewBox="0 -17.5 256 256" preserveAspectRatio="xMinYMin meet">
+                <path d="M204.8 0H256L128 220.8 0 0h97.92L128 51.2 157.44 0h47.36z" fill="#41B883"/>
+                <path d="M0 0l128 220.8L256 0h-51.2L128 132.48 50.56 0H0z" fill="#41B883"/><path d="M50.56 0L128 133.12 204.8 0h-47.36L128 51.2 97.92 0H50.56z" fill="#35495E"/>
               </svg>
             </div>
+            
             <div class="md:h-24 md:w-24 lg:h-10 lg:w-10 rounded-full flex items-center justify-center h-12 w-12 circle-2" style="background: rgb(2, 0, 36); transform: translateY(0px);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="lg:h-5 lg:w-5 md:h-7 md:w-7">
                 <g clip-path="url(#clip0_3307_794)">

@@ -20,7 +20,7 @@ impl Component for LanguagensRoot {
     html! {
       <div>
         <h1 class="heading" id="knowledge">
-          <span class="text-white">{"Tecnologias"}</span>
+          <span class="text-white">{"Tecnologias "}</span>
           <span class="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">{"Favoritas"}</span>
         </h1>
 
