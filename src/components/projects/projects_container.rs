@@ -18,7 +18,7 @@ impl Component for ProjectsContainer {
 
   fn view(&self, ctx: &Context<Self>) -> Html {
     html! {
-      <div class="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div class="flex flex-wrap items-center justify-center p-4  gap-x-24 gap-y-24 mt-10">
         { for ctx.props().children.iter() }
       </div>
     }

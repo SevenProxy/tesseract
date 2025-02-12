@@ -17,9 +17,17 @@ impl Component for NavbarContext {
               <span class="block sm:hidden"></span>
               <span class=" text-sm !cursor-pointer">{"Home"}</span>
             </a>
+            <a class="relative dark:text-neutral-50 items-center flex space-x-1 text-white dark:hover:text-neutral-300 hover:text-neutral-500" href="#about">
+              <span class="block sm:hidden"></span>
+              <span class=" text-sm !cursor-pointer">{"Sobre"}</span>
+            </a>
             <a class="relative dark:text-neutral-50 items-center flex space-x-1 text-white dark:hover:text-neutral-300 hover:text-neutral-500" href="#projects">
               <span class="block sm:hidden"></span>
               <span class=" text-sm !cursor-pointer">{"Projetos"}</span>
+            </a>
+            <a class="relative dark:text-neutral-50 items-center flex space-x-1 text-white dark:hover:text-neutral-300 hover:text-neutral-500" href="#knowledge">
+              <span class="block sm:hidden"></span>
+              <span class=" text-sm !cursor-pointer">{"Cursos"}</span>
             </a>
           </div>
         }

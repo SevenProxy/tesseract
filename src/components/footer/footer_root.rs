@@ -22,6 +22,7 @@ impl Component for FooterRoot {
         <div class="w-full absolute left-0 -bottom-72 min-h-96">
           <img src="/public/footer-grid.svg" alt="footer-img" class="w-full h-full opacity-50" />
         </div>
+        { for ctx.props().children.iter() }
       </footer>
     }
   }

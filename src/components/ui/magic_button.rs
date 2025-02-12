@@ -30,7 +30,7 @@ impl Component for MagicButton {
           class="inline-flex h-full w-full cursor-pointer items-center justify-center 
         rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 ${otherClasses}"
         >
-          { for ctx.props().children.iter()}
+          { for ctx.props().children.iter() }
         </span>
       </button>
     }

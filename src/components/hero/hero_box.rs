@@ -26,7 +26,7 @@ impl Component for HeroBox {
           </p>
 
           <a
-            href="https://drive.google.com/file/d/1EwdAdUczqlKzA_lNizax58Dpkby_QyvG/view?usp=sharing"
+            href="https://drive.google.com/file/d/1QG3pP1g5HKkyHXIXfyNrxDc2HksQAFyW/view"
             target="_blank"
           >
             <MagicButton>

@@ -8,6 +8,7 @@ use components::grid::{GridRoot, GridBoxAbout, GridBoxHour, GridBoxLang, GridBox
 use components::projects::{ProjectsCard, ProjectsContainer, ProjectsRoot};
 use components::know_ledge::{KnowRoot, KnowContainer, KnowBoxCourse, KnowBoxTech, KnowCard};
 use components::languagens::{LanguagensRoot, LanguagensContext, LanguagensCardFront, LanguagensCardBack, LanguagensCardTools};
+use components::footer::{FooterRoot, FooterContext, FooterInformation};
 use utils::{FETCH_COURSES, FETCH_PROJECTS};
 
 #[function_component(App)]
@@ -60,6 +61,10 @@ fn app() -> Html {
                         <LanguagensCardTools />
                     </LanguagensContext>
                 </LanguagensRoot>
+                <FooterRoot>
+                    <FooterContext />
+                    <FooterInformation />
+                </FooterRoot>
             </div>
         </main>
     }

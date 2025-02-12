@@ -18,7 +18,10 @@ impl Component for HeroRoot {
 
   fn view(&self, ctx: &Context<Self>) -> Html {
     html! {
-      <div class="pb-20 pt-36" id="home">
+      <div class="pb-20 pt-36 relative" id="home">
+        <div class="w-full absolute left-0 -top-20 z-10 min-h-96">
+          <img src="/public/footer-grid.svg" alt="footer-img" class="w-full h-full opacity-50" />
+        </div>
         <div>
           { for ctx.props().children.iter() }
         </div>
