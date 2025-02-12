@@ -613,6 +613,10 @@ button:active {
   bottom: -1.25rem;
 }
 
+.-bottom-72 {
+  bottom: -18rem;
+}
+
 .-left-0 {
   left: -0px;
 }
@@ -1592,6 +1596,10 @@ button:active {
   padding-bottom: 1.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1961,6 +1969,11 @@ button:active {
 }
 
 @media (prefers-color-scheme: dark) {
+  .dark\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
   .dark\:to-black {
     --tw-gradient-to: #000 var(--tw-gradient-to-position);
   }

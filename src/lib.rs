@@ -7,7 +7,7 @@ use components::hero::{HeroRoot, HeroContext, HeroBox};
 use components::grid::{GridRoot, GridBoxAbout, GridBoxHour, GridBoxLang, GridBoxDevWeb, GridBoxCourse, GridBoxEmail};
 use components::projects::{ProjectsCard, ProjectsContainer, ProjectsRoot};
 use components::know_ledge::{KnowRoot, KnowContainer, KnowBoxCourse, KnowBoxTech, KnowCard};
-use components::languagens::{LanguagensRoot, LanguagensContext, LanguagensCardFront};
+use components::languagens::{LanguagensRoot, LanguagensContext, LanguagensCardFront, LanguagensCardBack, LanguagensCardTools};
 use utils::{FETCH_COURSES, FETCH_PROJECTS};
 
 #[function_component(App)]
@@ -55,8 +55,9 @@ fn app() -> Html {
                 </KnowRoot>
                 <LanguagensRoot>
                     <LanguagensContext>
-                        <LanguagensCardFront>
-                        </LanguagensCardFront>
+                        <LanguagensCardFront />
+                        <LanguagensCardBack />
+                        <LanguagensCardTools />
                     </LanguagensContext>
                 </LanguagensRoot>
             </div>

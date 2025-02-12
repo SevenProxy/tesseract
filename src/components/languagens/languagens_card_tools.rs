@@ -1,13 +1,13 @@
 use yew::prelude::*;
 
-pub struct LanguagensCardFront;
+pub struct LanguagensCardTools;
 
-impl Component for LanguagensCardFront {
+impl Component for LanguagensCardTools {
   type Message = ();
   type Properties = ();
 
   fn create(_: &Context<Self>) -> Self {
-    LanguagensCardFront
+    LanguagensCardTools
   }
 
   fn view(&self, _: &Context<Self>) -> Html {
@@ -62,8 +62,9 @@ impl Component for LanguagensCardFront {
               </svg>
             </div>
           </div>
-          <div class="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move"><div class="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
-            <div class="absolute inset-0">
+          <div class="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
+            <div class="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
+              <div class="absolute inset-0">
                 <span class="inline-block bg-black dark:bg-white" style="position: absolute; top: 55.7611px; left: 25.4556px; width: 2px; height: 2px; border-radius: 50%; z-index: 1; opacity: 1; transform: scale(0.7575) translateZ(0px);"></span>
                 <span class="inline-block bg-black dark:bg-white" style="position: absolute; top: 45.528px; left: 25.7869px; width: 2px; height: 2px; border-radius: 50%; z-index: 1; opacity: 1; transform: scale(1.09971) translateZ(0px);"></span>
                 <span class="inline-block bg-black dark:bg-white" style="position: absolute; top: 112.273px; left: 24.641px; width: 2px; height: 2px; border-radius: 50%; z-index: 1; opacity: 1; transform: scale(1.12555) translateZ(0px);"></span>
@@ -76,15 +77,14 @@ impl Component for LanguagensCardFront {
                 <span class="inline-block bg-black dark:bg-white" style="position: absolute; top: 77.5791px; left: 36.2307px; width: 2px; height: 2px; border-radius: 50%; z-index: 1; opacity: 1; transform: scale(0.127453) translateZ(0px);"></span>
                 <span class="inline-block bg-black dark:bg-white" style="position: absolute; top: 113.101px; left: 29.0703px; width: 2px; height: 2px; border-radius: 50%; z-index: 1; opacity: 1; transform: scale(0.640048) translateZ(0px);"></span>
                 <span class="inline-block bg-black dark:bg-white" style="position: absolute; top: 100.776px; left: 10.6157px; width: 2px; height: 2px; border-radius: 50%; z-index: 1; opacity: 1; transform: scale(1.10346) translateZ(0px);"></span>
+              </div>
             </div>
           </div>
         </div>
-        </div>
       </div>
-      <h3 class="lg:text-lg font-semibold text-white md:text-3xl py-2">{"Front-end"}</h3>
+      <h3 class="lg:text-lg font-semibold text-white md:text-3xl py-2">{"Back-end"}</h3>
       <p class="lg:text-sm md:text-xl font-normal text-neutral-400 max-w-sm">{"Linguagens para Desenvolvimento WEB, com Conceitos Modernos de UI/UX."}</p>
     </div>
     }
   }
-
 }
