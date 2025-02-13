@@ -4,3 +4,8 @@ dist = "dist"
 
 [build.copy]
 "public/" = "dist/"
+"_redirects" = "dist/"
+
+[[copy]]
+source = "_redirects"
+target = "dist/_redirects"

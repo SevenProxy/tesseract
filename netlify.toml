@@ -1,0 +1,8 @@
+[build]
+publish = "dist"
+command = "trunk build --release"
+
+[[headers]]
+for = "/*.wasm"
+[headers.values]
+Content-Type = "application/wasm"
