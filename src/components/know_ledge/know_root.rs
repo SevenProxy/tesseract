@@ -21,7 +21,7 @@ impl Component for KnowRoot {
       <div>
         <h1 class="heading" id="knowledge">
             <span class="text-white">{"Educação e"}</span> 
-            <span class="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">{"Capacitações"}</span>
+            <span class="bg-gradient-to-r from-blue-600 to-purple bg-clip-text text-transparent">{" Capacitações"}</span>
         </h1>
         { for ctx.props().children.iter() }
       </div>

@@ -6,3 +6,4 @@ pub mod projects;
 pub mod know_ledge;
 pub mod languagens;
 pub mod footer;
+pub mod certificates;
