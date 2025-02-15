@@ -18,7 +18,7 @@ impl Component for TextGenerateEffect {
             <div>
               <span class="text-white opacity-0" style="opacity: 1;">{"Transformando "}</span>
               <span class="text-white opacity-0" style="opacity: 1;">{"a "}</span>
-              <span class="text-white opacity-0" style="opacity: 1;">{"Experiência" }</span>
+              <span class="text-white opacity-0" style="opacity: 1;">{"Experiência " }</span>
               <span class="text-white opacity-0" style="opacity: 1;">{"do "}</span>
               <span class="text-white opacity-0" style="opacity: 1;">{"Usuário "}</span>
               <span class="text-white opacity-0" style="opacity: 1;">{"com "}</span>
