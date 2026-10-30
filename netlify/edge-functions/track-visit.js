@@ -8,13 +8,16 @@ const EMBED_COLOR = 0x4b0082;
 export default async function handler(request, context) {
   const url = new URL(request.url);
   const accept = request.headers.get("accept") || "";
-  const isPageView =
+  const purpose = `${request.headers.get("purpose") || ""} ${request.headers.get("sec-purpose") || ""}`.toLowerCase();
+  const isHomePageView =
     request.method === "GET" &&
+    url.pathname === "/" &&
     accept.includes("text/html") &&
-    !url.pathname.startsWith("/.netlify/") &&
-    !url.pathname.startsWith("/public/");
+    !purpose.includes("prefetch") &&
+    !purpose.includes("prerender") &&
+    request.headers.get("x-moz") !== "prefetch";
 
-  if (!isPageView) {
+  if (!isHomePageView) {
     return context.next();
   }
 
@@ -28,7 +31,7 @@ export default async function handler(request, context) {
 }
 
 export const config = {
-  path: "/*",
+  path: "/",
 };
 
 async function trackVisit(request, context, url) {
